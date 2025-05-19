@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aplikasi Kasir</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    
+    <!-- KIRI: Kategori -->
+    <div class="kiri">
+      
+<div class="banner">
+        <h3>KATEGORI</h3>
+      </div>
+           
+
+      <div id="kategori-kiri"></div>
+         
+<div class="banner"></div>
+      <button class="btn-dashboard" onClick="goToLoginDashboard()">DASHBOARD</button>
+    </div>
+
+    <!-- TENGAH: Menu -->
+    <div class="tengah">
+      <div class="banner">
+        <h2>MENU</h2>
+        <p>RM PUTRA MINANG</p>
+      </div>
+      <div class="menu-grid" id="menu"></div>
+      <img id="gambar-preview" src="" alt="Gambar Produk" style="display:none;" />
+    </div>
+
+    <!-- KANAN: Form Pemesanan -->
+    <div class="kanan">
+      <div class="banner">
+        <h2>INPUT PESANAN</h2>
+      </div>
+      <form id="form-pesanan">
+        <div id="pesanan"></div>
+        <button type="button" id="tambah-barang" class="btn-tambah">+ Tambah Barang</button>
+         <input type="submit" value="Simpan Transaksi" class="btn-simpan" />
+        <div class="total">Total: <span id="total-harga">Rp 0</span></div>
+       
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

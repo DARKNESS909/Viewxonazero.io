@@ -1,0 +1,255 @@
+/* Global Layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f1f3f5;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* KIRI - Kategori */
+.kiri {
+  width: 15%;
+  padding: 20px;
+  background: #fff;
+  border-right: 1px solid #dee2e6;
+  overflow-y: auto;
+}
+
+.kiri h3 {
+  margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+#kategori-kiri {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-kategori {
+  background: #dee2e6;
+  border: none;
+  padding: 10px 14px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-kategori:hover {
+  background: #adb5bd;
+  color: #fff;
+}
+
+.btn-kategori.active {
+  background: #4c8bf5;
+  color: #fff;
+}
+
+/* TENGAH - Menu */
+.tengah {
+  width: 55%;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.menu-item {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.menu-item-name {
+  padding: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+#gambar-preview {
+  margin-top: 25px;
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border: 2px dashed #ced4da;
+  background: #f8f9fa;
+  border-radius: 12px;
+  display: block;
+}
+
+/* KANAN - Form Pemesanan */
+.kanan {
+  width: 30%;
+  padding: 24px;
+  background: #fff;
+  border-left: 1px solid #dee2e6;
+  overflow-y: auto;
+}
+
+.kanan h2 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pesanan-barang {
+  border: 1px solid #dee2e6;
+  padding: 16px;
+  border-radius: 10px;
+  background: #f1f3f5;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pesanan-barang input,
+.pesanan-barang select {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.pesanan-barang button {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pesanan-barang button:hover {
+  background: #b02a37;
+}
+
+/* Tombol Tambah Barang & Simpan */
+.btn-tambah {
+  background: #17a2b8;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.btn-tambah:hover {
+  background: #138496;
+}
+
+.btn-simpan {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-simpan:hover {
+  background: #218838;
+}
+
+/* Total Harga */
+.total {
+  font-size: 20px;
+  font-weight: 600;
+  color: #212529;
+  background-color: #f8f9fa;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 16px;
+  
+}
+
+.banner {
+  border-bottom: 3px solid #343a40;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #343a40;
+  font-family: "Georgia", serif;
+}
+
+.banner h2,h3 {
+  font-size: 28px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 14px;
+  margin: 4px 0 0;
+  font-style: italic;
+  color: #555;
+}
+
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #adb5bd;
+  border-radius: 10px;
+}
+
+.btn-dashboard {
+  padding: 8px 10px;
+  background: #4a90e2;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(74, 144, 226, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  min-width: 100px;
+}
+
+.btn-dashboard:hover {
+  background: #357ABD;
+  box-shadow: 0 5px 12px rgba(53, 122, 189, 0.7);
+}
+
+.btn-dashboard:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.6);
+}
